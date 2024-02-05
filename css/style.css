@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif; 
+    height: 100%;
+    margin: 0px auto;
+    scroll-behavior: smooth;
+}
+
+.hero, .hero-img{
+    height: 100%;
+
+    background-image: url('/images/hero-img.avif');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.logo{
+
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+}
+
+.btton{
+    padding-bottom: 20px;
+    margin: -10px;
+}
+
+.btn-1{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(107, 107, 240);
+    font-size: 15px;
+    color: antiquewhite;
+}
+
+/*Hero content*/
+
+.big-text{
+    margin-top: 150px;
+    font-size: 55px;
+    margin-left: 70px;
+}
+
+.btm2-text,.btm-text{
+   
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btm-text{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 180px;
+}
+
+.btm2-text{
+    font-size: 20px;
+    margin-left: 140px;
+}
+
+.bt-1{
+    margin-top: 20px;
+    margin-left: 350px;
+    padding: 10px 20px;
+    border: none;
+    color: antiquewhite;
+    border-radius: 15px;
+    background-color: rgb(107, 107, 240);
+    font-size: 15px;
+}
+
+/*about section*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.about-txt{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 70px;
+}
+
+.cards{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    
+}
+
+.img1,.img2,.img3{
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(1, 1, 1, 0.5);
+    padding: 5px;
+}
+
+.sp-big{
+    font-size: 22px;
+    padding: 5px;
+}
+
+.sp-small{
+    font-size: 15px;
+}
+
+/*after about sec*/
+
+.after-about{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.a-txt{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 600px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 70%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px 6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+input{
+    display: none;
+}
+
+.accordion .content{
+    line-height: 26px;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+
+.accordion input:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input:checked + label::before{
+    content: '-';
+}
+
+
+/*final section*/
+
+.final-sec{
+    margin-top: 200px;
+}
+
+.f-text{
+    text-align: center;
+    font-size: 70px;
+    color: rgb(58, 57, 57);
+}
+
+.lst-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(175, 162, 162);
+}
+
+/*registration form*/
+input[type="text"]{
+    padding: 5px 10px;
+    border: solid 2px black;
+}
+
+
+/*Footer section*/
+.f-class{
+    background-color: lightslategray;
+    padding: 30px;
+}
+.ft-txt{
+    font-size: 18px;
+    text-align: center;
+    color: whitesmoke;
+}
+
